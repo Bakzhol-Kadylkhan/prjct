@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica', 'Arial',
+        sans-serif;
+    font-size: 1em;
+    line-height: 1.2;
+    color: #222;
+    letter-spacing: 0.01em;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.3;
+}
+.title{
+  margin-top: 52px;
+  font-size: 67px;
+}
+
+
+h1,
+h2,
+h3,
+p {
+    margin: 0 0 1rem;
+}
+
+ol,
+ul {
+    margin: 0 0 1rem 2rem;
+}
+
+a {
+    color: inherit;
+}
+
+.connectivity-status {
+    font-weight: 600;
+}
+
+.connectivity-status.online {
+    color: green;
+}
+
+.connectivity-status.offline {
+    color: red;
+}
+.main2{
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/image22.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.page2_select{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page2_link{
+  width: 300px;
+  height: 300px;
+  background-color: rgb(223, 58, 58);
+  border-radius: 50%;
+  display: flex;
+  margin-right: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  margin-top: 80px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    align-items: center;
+}
+.Welcome{
+  position: absolute;
+  left: 600px;
+  top: 300px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 100px;
+  line-height: 0px;
+
+color: #FFA2A2;
+}
+.aba{
+  position: absolute;
+  left: 650px;
+  top: 420px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 100px;
+  line-height: 0px;
+
+color: #FFA2A2;
+}
+
+.main {
+  width: 100%;
+ height: 100vh;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+}
+.fon1{
+  background: url(/images/image1.png);
+  background-position: center;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.knopka-start{
+position: absolute;
+left: 730px;
+top: 500px;
+width: 100px;
+height: 100px;
+
+background: url(/images/image2.png);
+border-radius: 50px;}
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 50px;
+    left: 40px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+ /* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+    top: 0;
+    left: 2000px;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+.link{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.page_all{
+  width: 100%;
+  padding: 20px;
+}
+.first,.second,.third  {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.xdays{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.xday, .yday{
+  font-size: 50px;
+}
+
+.modal_okno {
+  width: 680px;
+  position: fixed;
+  display: none;
+  left: calc(40vw - 150px);
+  top: 300px;
+  background-color: #CFD8DC;
+  padding: 30px;
+}
+.modal_okno p{
+  text-align: center;
+}
+.modal-img{
+  width: 200px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.modal_top{
+  display: flex;
+}
+
+.modal_okno.active{
+  display: block;
+}
+
+.modal_bottom{
+  display: flex;
+  justify-content: space-around;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica', 'Arial',
+      sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  color: #222;
+  letter-spacing: 0.01em;
+}
+
+a{
+text-decoration: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 80px;
+  background-color: #333;
+  padding: 1rem;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px; /* 调整与header的距离 */
+}
+
+.left-container {
+  flex-basis: 50%;
+  padding: 1rem;
+  background-color: #ff5858;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px; /* 调整与地图容器的距离 */
+}
+
+.right-container {
+  flex-basis: 50%;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff5858;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+a:hover {
+  background-color: #e74c4c;
+}
+
+iframe {
+  width: 100%;
+  height: 290px;
+}
